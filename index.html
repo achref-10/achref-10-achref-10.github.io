@@ -3,41 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Achref Abdellaoui</title>
+  <title>My Static Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
       text-align: center;
-      background: #f4f4f4;
-      padding: 50px;
     }
-    h1 {
-      color: #333;
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 0;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    main {
+      padding: 30px;
     }
-    .container {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Achref Abdellaoui</h1>
-    <p>Electrical Engineer | Embedded Systems | EV Enthusiast</p>
-    <p>
-      🔗 <a href="https://github.com/achrefabdellaoui" target="_blank">GitHub</a><br>
-      💼 <a href="https://www.linkedin.com/in/achrefabdellaoui" target="_blank">LinkedIn</a><br>
-      📧 <a href="mailto:your.email@example.com">Contact Me</a>
-    </p>
-  </div>
+  <header>
+    <h1>Welcome to My Static Site</h1>
+    <p>Powered by HTML, CSS & JavaScript</p>
+  </header>
+
+  <main>
+    <p>This is a simple one-page website.</p>
+    <button onclick="sayHello()">Click Me</button>
+    <p id="message" style="margin-top: 20px; font-weight: bold;"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Achref Abdellaoui. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function sayHello() {
+      document.getElementById("message").innerText = "Hello! Thanks for clicking.";
+    }
+  </script>
 
 </body>
 </html>
